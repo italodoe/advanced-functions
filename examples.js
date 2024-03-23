@@ -31,4 +31,12 @@ const functionMaker = function(x){
     };
 };
 
+
+
 console.log( functionMaker('+')(3, 5) )
+
+const message = function(fn, param){
+    console.log(fn(...param));
+}
+
+message( suma,[ 2, 4] );
