@@ -22,3 +22,13 @@ console.log(operators['+'](5, 6));
 console.log(operators['*'](5, 6));
 console.log(operators['-'](5, 6));
 console.log(operators['/'](5, 6));
+
+
+
+const functionMaker = function(x){
+    return function(a, b){
+        return operators[x](a, b)
+    };
+};
+
+console.log( functionMaker('+')(3, 5) )
